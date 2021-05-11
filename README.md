@@ -14,3 +14,7 @@
 ###  私有库的引用参考本项目的podfile即可，或者参看TestBaseLabel项目里的readme
 
 1. 共有仓库变私有，以及更换仓库的所有者等等操作都是支持的
+
+2. 使用sdwebimage处理webq格式的图片，
+
+
