@@ -1,0 +1,9 @@
+
+# Xcode
+.DS_Store
+xcuserdata
+
+# CocoaPods
+Pods
+Podfile.lock
+xcschemes

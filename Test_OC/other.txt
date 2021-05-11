@@ -1,0 +1,6 @@
+
+  
+  1.  pod 'TestBaseLabel' 时无法安装私有库的，特别是当私有库托管在四哟项目时
+  2. pod 'TestBaseLabel', :git => '
+  https://github.com/zxpLearnios/TestBaseLabel.git'
+  
