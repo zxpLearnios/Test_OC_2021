@@ -27,11 +27,11 @@
     return YES;
 }
 
-#pragma mark 注释
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (self.touchBeganBlock) {
-        self.touchBeganBlock(touches, event);
-    }
-}
+#pragma mark 注释 看是否需要，因为有此法会导致collectionview的didSelectItem无法触发
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    if (self.touchBeganBlock) {
+//        self.touchBeganBlock(touches, event);
+//    }
+//}
 
 @end

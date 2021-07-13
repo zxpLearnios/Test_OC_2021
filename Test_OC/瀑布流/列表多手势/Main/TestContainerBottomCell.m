@@ -3,7 +3,7 @@
 //  Test_OC
 //
 //  Created by bavaria on 2021/7/12.
-//
+//  可以bounce
 
 #import "TestContainerBottomCell.h"
 #import "TestContainerBottomCollctionView.h"
@@ -74,7 +74,7 @@
 
 #pragma mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    NSLog(@"子scrollView的滚动距离：%f", scrollView.contentOffset.y);
+    NSLog(@"子scrollView的滚动距离：%f", scrollView.contentOffset.y);
     
     if (!self.childCanScroll) {
         scrollView.contentOffset = CGPointMake(0, 0);

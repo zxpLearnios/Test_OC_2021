@@ -273,13 +273,8 @@
 		54664332269AEF6200FDAEB3 /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				54A65E02269D90EF0059F1F5 /* nouse */,
 				5466434B269C4C4800FDAEB3 /* 列表多手势 */,
-				54664333269AEF7700FDAEB3 /* TestCollectionViewController.h */,
-				54664334269AEF7700FDAEB3 /* TestCollectionViewController.m */,
-				54664336269AEF9900FDAEB3 /* TestCollectionViewCell.h */,
-				54664337269AEF9900FDAEB3 /* TestCollectionViewCell.m */,
-				54664339269AF5D100FDAEB3 /* TestWaterFlowLayout.h */,
-				5466433A269AF5D100FDAEB3 /* TestWaterFlowLayout.m */,
 			);
 			path = "瀑布流";
 			sourceTree = "<group>";
@@ -287,6 +282,7 @@
 		5466434B269C4C4800FDAEB3 /* 列表多手势 */ = {
 			isa = PBXGroup;
 			children = (
+				54A65E01269D90CF0059F1F5 /* Other */,
 				54664356269D291400FDAEB3 /* Sub */,
 				54664355269D290700FDAEB3 /* Main */,
 			);
@@ -298,8 +294,6 @@
 			children = (
 				54664342269C4A6A00FDAEB3 /* TestContainerVc.h */,
 				54664343269C4A6A00FDAEB3 /* TestContainerVc.m */,
-				54664352269C568800FDAEB3 /* TestGestureTableView.h */,
-				54664353269C568800FDAEB3 /* TestGestureTableView.m */,
 				54664345269C4AD000FDAEB3 /* TestContainerTopCell.h */,
 				54664346269C4AD000FDAEB3 /* TestContainerTopCell.m */,
 				54664348269C4AD900FDAEB3 /* TestContainerBottomCell.h */,
@@ -403,6 +397,28 @@
 				5486D89825F9B3E200D05138 /* UCM_rebateModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		54A65E01269D90CF0059F1F5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				54664352269C568800FDAEB3 /* TestGestureTableView.h */,
+				54664353269C568800FDAEB3 /* TestGestureTableView.m */,
+				54664339269AF5D100FDAEB3 /* TestWaterFlowLayout.h */,
+				5466433A269AF5D100FDAEB3 /* TestWaterFlowLayout.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		54A65E02269D90EF0059F1F5 /* nouse */ = {
+			isa = PBXGroup;
+			children = (
+				54664333269AEF7700FDAEB3 /* TestCollectionViewController.h */,
+				54664334269AEF7700FDAEB3 /* TestCollectionViewController.m */,
+				54664336269AEF9900FDAEB3 /* TestCollectionViewCell.h */,
+				54664337269AEF9900FDAEB3 /* TestCollectionViewCell.m */,
+			);
+			path = nouse;
 			sourceTree = "<group>";
 		};
 		C1B5C26AA169DDEEBF2ECBD1 /* Frameworks */ = {

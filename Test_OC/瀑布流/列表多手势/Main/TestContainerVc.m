@@ -7,6 +7,7 @@
 //  2. 当存放子列表的cell不在最底部时
 //  3. 不加pan手势的话，当手势首次响应者是container列表时(即它的的cell)时，这时候当手势结束后再次滑动外部列表会无法在滑动，因为没有触发子列表的回调没有设置superCanScroll
 // 4. 根据具体的外部列表最大滚动距离 来 决定 是否禁止外部列表的bounces。
+//  5.  主列表、子列表都可以设置 bounces=yes
 
 #import "TestContainerVc.h"
 #import "TestContainerTopCell.h"
@@ -35,7 +36,7 @@
     [super viewDidLoad];
     
     maxRow = 4;
-    maxOffsetY = 130;
+    maxOffsetY = 100;
     self.superCanScroll = YES;
     
     topCellid = @"TestContainerTopCell";
@@ -45,7 +46,7 @@
     mainTableView.delegate = self;
     mainTableView.dataSource = self;
     // 根据具体的外部列表最大滚动距离 来 决定 是否禁止外部列表的bounces
-    mainTableView.bounces = NO;
+//    mainTableView.bounces = NO;
     
     self.mainTableView = mainTableView;
     
@@ -96,6 +97,7 @@
             if (scrollView.contentOffset.y >= maxOffsetY) {
                 scrollView.contentOffset = CGPointMake(0, maxOffsetY);
                 self.superCanScroll = NO;
+                self.btmcell.childCanScroll = YES;
             }
         }
     }
@@ -157,7 +159,7 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.section == maxRow-2 ? 500 : 200;
+    return indexPath.section == maxRow-2 ? 400 : 200;
 }
 
 @end
