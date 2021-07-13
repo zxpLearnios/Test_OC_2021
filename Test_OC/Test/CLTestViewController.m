@@ -60,6 +60,12 @@
     [CLTestSharedViewManager.shared.view removeFromSuperview];
     CLTestSharedViewManager.shared.view = nil;
     
+    // 3.
+    NSSet *set = [NSSet new];
+    set = [set setByAddingObject:@1];
+    set = [set setByAddingObject:@{@"11": @"value"}];
+    
+    NSHashTable *a;
 }
 
 

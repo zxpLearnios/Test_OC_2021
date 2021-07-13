@@ -14,6 +14,8 @@
 /// 处理webq格式的图片
 #import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
 
+#import "TestCollectionViewController.h"
+#import "TestContainerVc.h"
 //#import <YYKit/YYKit.h>
 
 
@@ -103,8 +105,12 @@
 
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    // test  CLTestViewController  UCM_rebateViewController  TestQMUIViewController
-    TestQMUIViewController *testVc = [[TestQMUIViewController alloc]init];
+    // test  CLTestViewController  UCM_rebateViewController  TestQMUIViewController TestCollectionViewController
+    
+//    UICollectionViewFlowLayout *flayout = [[UICollectionViewFlowLayout alloc]init];
+//    TestCollectionViewController *testVc = [[TestCollectionViewController alloc]initWithCollectionViewLayout:flayout];
+    
+    TestContainerVc *testVc = [TestContainerVc new];
     [self.navigationController pushViewController:testVc animated:YES];
 }
 

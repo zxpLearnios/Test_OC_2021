@@ -30,6 +30,15 @@
 		544FCFD625BFB4A200EFD1C4 /* CLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544FCFD425BFB4A200EFD1C4 /* CLTestViewController.m */; };
 		544FD23B25BFF3D500EFD1C4 /* CLTestSharedViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 544FD23A25BFF3D500EFD1C4 /* CLTestSharedViewManager.m */; };
 		544FD48C25C108B300EFD1C4 /* other.txt in Resources */ = {isa = PBXBuildFile; fileRef = 544FD48B25C108B300EFD1C4 /* other.txt */; };
+		54664335269AEF7700FDAEB3 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54664334269AEF7700FDAEB3 /* TestCollectionViewController.m */; };
+		54664338269AEF9900FDAEB3 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54664337269AEF9900FDAEB3 /* TestCollectionViewCell.m */; };
+		5466433B269AF5D100FDAEB3 /* TestWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5466433A269AF5D100FDAEB3 /* TestWaterFlowLayout.m */; };
+		54664344269C4A6A00FDAEB3 /* TestContainerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 54664343269C4A6A00FDAEB3 /* TestContainerVc.m */; };
+		54664347269C4AD000FDAEB3 /* TestContainerTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54664346269C4AD000FDAEB3 /* TestContainerTopCell.m */; };
+		5466434A269C4AD900FDAEB3 /* TestContainerBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54664349269C4AD900FDAEB3 /* TestContainerBottomCell.m */; };
+		5466434E269C4CB300FDAEB3 /* TestContainerBottomCollctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5466434D269C4CB300FDAEB3 /* TestContainerBottomCollctionView.m */; };
+		54664351269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54664350269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.m */; };
+		54664354269C568800FDAEB3 /* TestGestureTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54664353269C568800FDAEB3 /* TestGestureTableView.m */; };
 		5471033126032FF7008DE908 /* TestQMUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5471033026032FF7008DE908 /* TestQMUIViewController.m */; };
 		5486D89C25F9B3E200D05138 /* UCM_rebateNewContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486D87C25F9B3E200D05138 /* UCM_rebateNewContentCell.m */; };
 		5486D89D25F9B3E200D05138 /* UCM_rebateSubNewTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486D87F25F9B3E200D05138 /* UCM_rebateSubNewTableView.m */; };
@@ -95,6 +104,24 @@
 		544FD23925BFF3D500EFD1C4 /* CLTestSharedViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLTestSharedViewManager.h; sourceTree = "<group>"; };
 		544FD23A25BFF3D500EFD1C4 /* CLTestSharedViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLTestSharedViewManager.m; sourceTree = "<group>"; };
 		544FD48B25C108B300EFD1C4 /* other.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = other.txt; sourceTree = "<group>"; };
+		54664333269AEF7700FDAEB3 /* TestCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
+		54664334269AEF7700FDAEB3 /* TestCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		54664336269AEF9900FDAEB3 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		54664337269AEF9900FDAEB3 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
+		54664339269AF5D100FDAEB3 /* TestWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWaterFlowLayout.h; sourceTree = "<group>"; };
+		5466433A269AF5D100FDAEB3 /* TestWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWaterFlowLayout.m; sourceTree = "<group>"; };
+		54664342269C4A6A00FDAEB3 /* TestContainerVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerVc.h; sourceTree = "<group>"; };
+		54664343269C4A6A00FDAEB3 /* TestContainerVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerVc.m; sourceTree = "<group>"; };
+		54664345269C4AD000FDAEB3 /* TestContainerTopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerTopCell.h; sourceTree = "<group>"; };
+		54664346269C4AD000FDAEB3 /* TestContainerTopCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerTopCell.m; sourceTree = "<group>"; };
+		54664348269C4AD900FDAEB3 /* TestContainerBottomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerBottomCell.h; sourceTree = "<group>"; };
+		54664349269C4AD900FDAEB3 /* TestContainerBottomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerBottomCell.m; sourceTree = "<group>"; };
+		5466434C269C4CB300FDAEB3 /* TestContainerBottomCollctionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerBottomCollctionView.h; sourceTree = "<group>"; };
+		5466434D269C4CB300FDAEB3 /* TestContainerBottomCollctionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerBottomCollctionView.m; sourceTree = "<group>"; };
+		5466434F269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerBottomCollctionViewCell.h; sourceTree = "<group>"; };
+		54664350269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerBottomCollctionViewCell.m; sourceTree = "<group>"; };
+		54664352269C568800FDAEB3 /* TestGestureTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGestureTableView.h; sourceTree = "<group>"; };
+		54664353269C568800FDAEB3 /* TestGestureTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGestureTableView.m; sourceTree = "<group>"; };
 		5471032F26032FF7008DE908 /* TestQMUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestQMUIViewController.h; sourceTree = "<group>"; };
 		5471033026032FF7008DE908 /* TestQMUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestQMUIViewController.m; sourceTree = "<group>"; };
 		5486D87A25F9B3E200D05138 /* UCM_rebateNewContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCM_rebateNewContentCell.h; sourceTree = "<group>"; };
@@ -193,6 +220,7 @@
 		544FCF7925BEE96900EFD1C4 /* Test_OC */ = {
 			isa = PBXGroup;
 			children = (
+				54664332269AEF6200FDAEB3 /* 瀑布流 */,
 				5444F9262629702E00FA002A /* libs */,
 				5471032E26032FE1008DE908 /* border测试 */,
 				5486D87625F9B3E100D05138 /* UCMRebate */,
@@ -240,6 +268,39 @@
 				544FCFD425BFB4A200EFD1C4 /* CLTestViewController.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		54664332269AEF6200FDAEB3 /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				5466434B269C4C4800FDAEB3 /* 列表多手势 */,
+				54664333269AEF7700FDAEB3 /* TestCollectionViewController.h */,
+				54664334269AEF7700FDAEB3 /* TestCollectionViewController.m */,
+				54664336269AEF9900FDAEB3 /* TestCollectionViewCell.h */,
+				54664337269AEF9900FDAEB3 /* TestCollectionViewCell.m */,
+				54664339269AF5D100FDAEB3 /* TestWaterFlowLayout.h */,
+				5466433A269AF5D100FDAEB3 /* TestWaterFlowLayout.m */,
+			);
+			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		5466434B269C4C4800FDAEB3 /* 列表多手势 */ = {
+			isa = PBXGroup;
+			children = (
+				54664342269C4A6A00FDAEB3 /* TestContainerVc.h */,
+				54664343269C4A6A00FDAEB3 /* TestContainerVc.m */,
+				54664352269C568800FDAEB3 /* TestGestureTableView.h */,
+				54664353269C568800FDAEB3 /* TestGestureTableView.m */,
+				54664345269C4AD000FDAEB3 /* TestContainerTopCell.h */,
+				54664346269C4AD000FDAEB3 /* TestContainerTopCell.m */,
+				54664348269C4AD900FDAEB3 /* TestContainerBottomCell.h */,
+				54664349269C4AD900FDAEB3 /* TestContainerBottomCell.m */,
+				5466434C269C4CB300FDAEB3 /* TestContainerBottomCollctionView.h */,
+				5466434D269C4CB300FDAEB3 /* TestContainerBottomCollctionView.m */,
+				5466434F269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.h */,
+				54664350269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.m */,
+			);
+			path = "列表多手势";
 			sourceTree = "<group>";
 		};
 		5471032E26032FE1008DE908 /* border测试 */ = {
@@ -524,19 +585,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5466434A269C4AD900FDAEB3 /* TestContainerBottomCell.m in Sources */,
 				5486D89D25F9B3E200D05138 /* UCM_rebateSubNewTableView.m in Sources */,
+				5466434E269C4CB300FDAEB3 /* TestContainerBottomCollctionView.m in Sources */,
+				54664351269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.m in Sources */,
+				54664335269AEF7700FDAEB3 /* TestCollectionViewController.m in Sources */,
 				544FCFD525BFB4A200EFD1C4 /* CLTestSharedView.m in Sources */,
 				5486D89C25F9B3E200D05138 /* UCM_rebateNewContentCell.m in Sources */,
+				54664347269C4AD000FDAEB3 /* TestContainerTopCell.m in Sources */,
 				5486D8A625F9B3E200D05138 /* UCM_rebateViewController.m in Sources */,
 				5471033126032FF7008DE908 /* TestQMUIViewController.m in Sources */,
 				5486D8A825F9B3E200D05138 /* UCM_rebateModel.m in Sources */,
+				54664354269C568800FDAEB3 /* TestGestureTableView.m in Sources */,
 				544FD23B25BFF3D500EFD1C4 /* CLTestSharedViewManager.m in Sources */,
 				5486D8A525F9B3E200D05138 /* UCM_rebateNewSubViewController.m in Sources */,
 				544FCF8225BEE96900EFD1C4 /* ViewController.m in Sources */,
+				5466433B269AF5D100FDAEB3 /* TestWaterFlowLayout.m in Sources */,
+				54664338269AEF9900FDAEB3 /* TestCollectionViewCell.m in Sources */,
 				5486D89F25F9B3E200D05138 /* UCM_rebateTradeDateView.m in Sources */,
 				544FCF7C25BEE96900EFD1C4 /* AppDelegate.m in Sources */,
 				544FCFD625BFB4A200EFD1C4 /* CLTestViewController.m in Sources */,
 				544FCF8D25BEE96B00EFD1C4 /* main.m in Sources */,
+				54664344269C4A6A00FDAEB3 /* TestContainerVc.m in Sources */,
 				5486D8A725F9B3E200D05138 /* UCM_rebateSearchModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
