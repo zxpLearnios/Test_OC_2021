@@ -3,7 +3,10 @@
 //  Test_OC
 //
 //  Created by bavaria on 2021/7/12.
-//
+//  1. 当存放子列表的cell在最底部时
+//  2. 当存放子列表的cell不在最底部时
+//  3. 不加pan手势的话，当手势首次响应者是container列表时(即它的的cell)时，这时候当手势结束后再次滑动外部列表会无法在滑动，因为没有触发子列表的回调没有设置superCanScroll
+// 4. 根据具体的外部列表最大滚动距离 来 决定 是否禁止外部列表的bounces。
 
 #import "TestContainerVc.h"
 #import "TestContainerTopCell.h"
@@ -17,12 +20,12 @@
     int maxRow;
     NSString *topCellid;
     NSString *btmCellId;
-    // 第一次是否是出发点在主列表上
+    // 第一次是否是出发点在主列表上，防止手势开始时在最外部的列表cell时导致此列表无法滚动
     BOOL isPanMainListView;
     double maxOffsetY;
 }
 @property (nonatomic, assign) BOOL superCanScroll;
-@property (nonatomic, strong) TestGestureTableView *tv;
+@property (nonatomic, strong) TestGestureTableView *mainTableView;
 @property (nonatomic, strong) TestContainerBottomCell *btmcell;
 @end
 
@@ -35,33 +38,33 @@
     maxOffsetY = 130;
     self.superCanScroll = YES;
     
-    topCellid = @"1";
-    btmCellId = @"2";
+    topCellid = @"TestContainerTopCell";
+    btmCellId = @"TestContainerBottomCell";
     
-    TestGestureTableView *tv = [TestGestureTableView new];
-    tv.delegate = self;
-    tv.dataSource = self;
-    tv.bounces = NO;
+    TestGestureTableView *mainTableView = [TestGestureTableView new];
+    mainTableView.delegate = self;
+    mainTableView.dataSource = self;
+    // 根据具体的外部列表最大滚动距离 来 决定 是否禁止外部列表的bounces
+    mainTableView.bounces = NO;
     
-    self.tv = tv;
+    self.mainTableView = mainTableView;
     
-    [self.view addSubview:tv];
-    [tv mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:mainTableView];
+    [mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
     
-    [tv registerClass:[TestContainerTopCell class] forCellReuseIdentifier:topCellid];
-    [tv registerClass:[TestContainerBottomCell class] forCellReuseIdentifier:btmCellId];
+    [mainTableView registerClass:[TestContainerTopCell class] forCellReuseIdentifier:topCellid];
+    [mainTableView registerClass:[TestContainerBottomCell class] forCellReuseIdentifier:btmCellId];
      
     
     __weak typeof(self) weakSelf = self;
-    tv.touchBeganBlock = ^(NSSet<UITouch *> * _Nonnull touches, UIEvent * _Nonnull event) {
+    mainTableView.touchBeganBlock = ^(NSSet<UITouch *> * _Nonnull touches, UIEvent * _Nonnull event) {
         [weakSelf touchesBegan:touches withEvent:event];
     };
     
-    
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
-    [tv addGestureRecognizer:pan];
+    [mainTableView addGestureRecognizer:pan];
 }
 
 - (void)dealloc
@@ -85,7 +88,7 @@
     if (isPanMainListView) {
         return;
     } else {
-        NSLog(@"00000000000111111");
+//        NSLog(@"00000000000111111");
         if (!self.superCanScroll) {
             scrollView.contentOffset = CGPointMake(0, maxOffsetY);
             self.btmcell.childCanScroll = YES;
@@ -117,7 +120,6 @@
     UITouch *touch = [touches  anyObject];
     NSString *str = (touch.view == self.btmcell) ? @"在子列表上" : @"不在子列表上";
     NSLog(@"点击手势开始时，%@", str);
-    
 }
 
 
@@ -134,7 +136,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == maxRow-1) {
+    if (indexPath.section == maxRow-2) {
         if (!self.btmcell) {
             TestContainerBottomCell *btmcell = [tableView dequeueReusableCellWithIdentifier:btmCellId forIndexPath:indexPath];
             btmcell.backgroundColor = [UIColor blueColor];
@@ -148,14 +150,14 @@
         return self.btmcell;
     } else {
         TestContainerTopCell *topcell = [tableView dequeueReusableCellWithIdentifier:topCellid forIndexPath:indexPath];
-        topcell.backgroundColor = (indexPath.row % 2 == 0) ? [UIColor grayColor] : [UIColor redColor];
+        topcell.backgroundColor = (indexPath.section % 2 == 0) ? [UIColor grayColor] : [UIColor redColor];
         return topcell;
     }
 }
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.section == maxRow-1 ? 500 : 200;
+    return indexPath.section == maxRow-2 ? 500 : 200;
 }
 
 @end

@@ -287,6 +287,15 @@
 		5466434B269C4C4800FDAEB3 /* 列表多手势 */ = {
 			isa = PBXGroup;
 			children = (
+				54664356269D291400FDAEB3 /* Sub */,
+				54664355269D290700FDAEB3 /* Main */,
+			);
+			path = "列表多手势";
+			sourceTree = "<group>";
+		};
+		54664355269D290700FDAEB3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				54664342269C4A6A00FDAEB3 /* TestContainerVc.h */,
 				54664343269C4A6A00FDAEB3 /* TestContainerVc.m */,
 				54664352269C568800FDAEB3 /* TestGestureTableView.h */,
@@ -295,12 +304,19 @@
 				54664346269C4AD000FDAEB3 /* TestContainerTopCell.m */,
 				54664348269C4AD900FDAEB3 /* TestContainerBottomCell.h */,
 				54664349269C4AD900FDAEB3 /* TestContainerBottomCell.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		54664356269D291400FDAEB3 /* Sub */ = {
+			isa = PBXGroup;
+			children = (
 				5466434C269C4CB300FDAEB3 /* TestContainerBottomCollctionView.h */,
 				5466434D269C4CB300FDAEB3 /* TestContainerBottomCollctionView.m */,
 				5466434F269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.h */,
 				54664350269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.m */,
 			);
-			path = "列表多手势";
+			path = Sub;
 			sourceTree = "<group>";
 		};
 		5471032E26032FE1008DE908 /* border测试 */ = {

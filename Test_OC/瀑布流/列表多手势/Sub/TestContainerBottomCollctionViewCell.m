@@ -18,7 +18,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor orangeColor];
         
         UILabel *titleLab = [UILabel new];
         self.titleLab = titleLab;

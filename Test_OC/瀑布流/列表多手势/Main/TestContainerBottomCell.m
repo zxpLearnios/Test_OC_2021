@@ -19,7 +19,7 @@
     NSString *cellid;
    
 }
-@property (nonatomic, strong) TestContainerBottomCollctionView *tv;
+@property (nonatomic, strong) TestContainerBottomCollctionView *listView;
 @end
 
 @implementation TestContainerBottomCell
@@ -37,28 +37,20 @@
     cellid = @"TestContainerBottomCollctionViewCell";
     
     TestWaterFlowLayout *layout = [TestWaterFlowLayout new];
+    TestContainerBottomCollctionView *listView = [[TestContainerBottomCollctionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+    self.listView = listView;
+    [self.contentView addSubview:listView];
+    
     layout.delegate = self;
+    listView.backgroundColor = [UIColor whiteColor];
+    listView.delegate = self;
+    listView.dataSource = self;
+    listView.collectionViewLayout = layout;
     
-    TestContainerBottomCollctionView *tv = [[TestContainerBottomCollctionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-    tv.collectionViewLayout = layout;
-    
-    tv.delegate = self;
-    tv.dataSource = self;
-    
-    
-    self.tv = tv;
-    [self.contentView addSubview:tv];
-    
-    
-    
-    
-    [tv registerClass:[TestContainerBottomCollctionViewCell class] forCellWithReuseIdentifier:cellid];
-    
-    [tv mas_makeConstraints:^(MASConstraintMaker *make) {
+    [listView registerClass:[TestContainerBottomCollctionViewCell class] forCellWithReuseIdentifier:cellid];
+    [listView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
-    
-
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
