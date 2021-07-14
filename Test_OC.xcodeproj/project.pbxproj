@@ -47,6 +47,8 @@
 		5486D8A625F9B3E200D05138 /* UCM_rebateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486D89425F9B3E200D05138 /* UCM_rebateViewController.m */; };
 		5486D8A725F9B3E200D05138 /* UCM_rebateSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486D89725F9B3E200D05138 /* UCM_rebateSearchModel.m */; };
 		5486D8A825F9B3E200D05138 /* UCM_rebateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486D89825F9B3E200D05138 /* UCM_rebateModel.m */; };
+		54A65E06269E76930059F1F5 /* TestContainerVc2.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A65E05269E76930059F1F5 /* TestContainerVc2.m */; };
+		54A65E09269E78E00059F1F5 /* TestContainerBottomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A65E08269E78E00059F1F5 /* TestContainerBottomCell2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,10 @@
 		5486D89825F9B3E200D05138 /* UCM_rebateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCM_rebateModel.m; sourceTree = "<group>"; };
 		5486D89925F9B3E200D05138 /* UCM_rebateSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCM_rebateSearchModel.h; sourceTree = "<group>"; };
 		5486D89A25F9B3E200D05138 /* UCM_rebateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCM_rebateModel.h; sourceTree = "<group>"; };
+		54A65E04269E76930059F1F5 /* TestContainerVc2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerVc2.h; sourceTree = "<group>"; };
+		54A65E05269E76930059F1F5 /* TestContainerVc2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerVc2.m; sourceTree = "<group>"; };
+		54A65E07269E78E00059F1F5 /* TestContainerBottomCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerBottomCell2.h; sourceTree = "<group>"; };
+		54A65E08269E78E00059F1F5 /* TestContainerBottomCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerBottomCell2.m; sourceTree = "<group>"; };
 		54CADF9F26253922007D1FD4 /* SDWebImageWebPCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImageWebPCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B71EF67F776C5D2B6CB7A4A /* Pods_Test_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33F3A0B580A996A70BAFBBC /* Pods-Test_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_OC.release.xcconfig"; path = "Target Support Files/Pods-Test_OC/Pods-Test_OC.release.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +288,7 @@
 		5466434B269C4C4800FDAEB3 /* 列表多手势 */ = {
 			isa = PBXGroup;
 			children = (
+				54A65E03269E74AA0059F1F5 /* 计算行高 */,
 				54A65E01269D90CF0059F1F5 /* Other */,
 				54664356269D291400FDAEB3 /* Sub */,
 				54664355269D290700FDAEB3 /* Main */,
@@ -419,6 +426,17 @@
 				54664337269AEF9900FDAEB3 /* TestCollectionViewCell.m */,
 			);
 			path = nouse;
+			sourceTree = "<group>";
+		};
+		54A65E03269E74AA0059F1F5 /* 计算行高 */ = {
+			isa = PBXGroup;
+			children = (
+				54A65E04269E76930059F1F5 /* TestContainerVc2.h */,
+				54A65E05269E76930059F1F5 /* TestContainerVc2.m */,
+				54A65E07269E78E00059F1F5 /* TestContainerBottomCell2.h */,
+				54A65E08269E78E00059F1F5 /* TestContainerBottomCell2.m */,
+			);
+			path = "计算行高";
 			sourceTree = "<group>";
 		};
 		C1B5C26AA169DDEEBF2ECBD1 /* Frameworks */ = {
@@ -625,9 +643,11 @@
 				544FCFD525BFB4A200EFD1C4 /* CLTestSharedView.m in Sources */,
 				5486D89C25F9B3E200D05138 /* UCM_rebateNewContentCell.m in Sources */,
 				54664347269C4AD000FDAEB3 /* TestContainerTopCell.m in Sources */,
+				54A65E09269E78E00059F1F5 /* TestContainerBottomCell2.m in Sources */,
 				5486D8A625F9B3E200D05138 /* UCM_rebateViewController.m in Sources */,
 				5471033126032FF7008DE908 /* TestQMUIViewController.m in Sources */,
 				5486D8A825F9B3E200D05138 /* UCM_rebateModel.m in Sources */,
+				54A65E06269E76930059F1F5 /* TestContainerVc2.m in Sources */,
 				54664354269C568800FDAEB3 /* TestGestureTableView.m in Sources */,
 				544FD23B25BFF3D500EFD1C4 /* CLTestSharedViewManager.m in Sources */,
 				5486D8A525F9B3E200D05138 /* UCM_rebateNewSubViewController.m in Sources */,

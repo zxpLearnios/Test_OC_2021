@@ -18,10 +18,15 @@ static const CGFloat RADefaultColumnsMargin = 10;
 static const UIEdgeInsets RADefaultInsets = {10,10,10,10};
 
 @interface TestWaterFlowLayout ()
-
+{
+    /// 存储首次得出的最高列的高度
+    double lastMaxHeight;
+}
 //存放每一列最大Y值
 @property (strong,nonatomic)NSMutableArray *maxYs;
 
+/// 存储首次得出的最高列的高度
+//@property (nonatomic, assign) double lastMaxHeight;
 @property (strong,nonatomic)NSMutableArray *attrsArray;
 
 @end
@@ -125,10 +130,8 @@ static const UIEdgeInsets RADefaultInsets = {10,10,10,10};
     return attrs;
 }
 
-//最大滚动距离
-- (CGSize)collectionViewContentSize
-{
-
+#pragma mark  最大滚动距离
+- (CGSize)collectionViewContentSize {
     CGFloat longMaxY = 0;
     if (self.maxYs.count) {
         longMaxY = [self.maxYs[0] doubleValue]; // 最长那一列 的 最大Y值
@@ -142,9 +145,16 @@ static const UIEdgeInsets RADefaultInsets = {10,10,10,10};
         // 累加底部的间距
         longMaxY += self.insets.bottom;
     }
+    if (lastMaxHeight != longMaxY) {
+        if (self.getMaxColumnBlock) {
+            self.getMaxColumnBlock(longMaxY);
+        }
+        
+        lastMaxHeight = longMaxY;
+    }
     return CGSizeMake(0, longMaxY);
-
 }
+
 #pragma mark - 私有方法(获得代理返回的数字)
 - (int)maxColumns
 {

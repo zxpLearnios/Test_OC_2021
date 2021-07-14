@@ -3,6 +3,7 @@
 //  Test_OC
 //
 //  Created by bavaria on 2021/7/12.
+//  0. 方式1
 //  1. 当存放子列表的cell在最底部时
 //  2. 当存放子列表的cell不在最底部时
 //  3. 不加pan手势的话，当手势首次响应者是container列表时(即它的的cell)时，这时候当手势结束后再次滑动外部列表会无法在滑动，因为没有触发子列表的回调没有设置superCanScroll
@@ -64,6 +65,7 @@
         [weakSelf touchesBegan:touches withEvent:event];
     };
     
+    // 加此手势是为了处理：当手势首次触发时在非‘装子列表的cell’时，会导致主列表无法滚动的问题
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
     [mainTableView addGestureRecognizer:pan];
 }

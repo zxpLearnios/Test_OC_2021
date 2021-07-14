@@ -16,6 +16,8 @@
 
 #import "TestCollectionViewController.h"
 #import "TestContainerVc.h"
+#import "TestContainerVc2.h"
+
 //#import <YYKit/YYKit.h>
 
 
@@ -110,8 +112,12 @@
 //    UICollectionViewFlowLayout *flayout = [[UICollectionViewFlowLayout alloc]init];
 //    TestCollectionViewController *testVc = [[TestCollectionViewController alloc]initWithCollectionViewLayout:flayout];
     
+    // 列表多手势方式1
     TestContainerVc *testVc = [TestContainerVc new];
-    [self.navigationController pushViewController:testVc animated:YES];
+    // 列表多手势方式2
+    TestContainerVc2 *testVc2 = [TestContainerVc2 new];
+    
+    [self.navigationController pushViewController:testVc2 animated:YES];
 }
 
 @end
