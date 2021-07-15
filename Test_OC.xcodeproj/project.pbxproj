@@ -49,6 +49,9 @@
 		5486D8A825F9B3E200D05138 /* UCM_rebateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486D89825F9B3E200D05138 /* UCM_rebateModel.m */; };
 		54A65E06269E76930059F1F5 /* TestContainerVc2.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A65E05269E76930059F1F5 /* TestContainerVc2.m */; };
 		54A65E09269E78E00059F1F5 /* TestContainerBottomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A65E08269E78E00059F1F5 /* TestContainerBottomCell2.m */; };
+		54A65E11269FCC480059F1F5 /* NSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A65E10269FCC480059F1F5 /* NSDateManager.m */; };
+		54A65E14269FD1420059F1F5 /* TestActivityResidueTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A65E13269FD1420059F1F5 /* TestActivityResidueTimeViewController.m */; };
+		54A65E1B26A028F80059F1F5 /* TLResidueDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A65E1926A028F70059F1F5 /* TLResidueDateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +147,12 @@
 		54A65E05269E76930059F1F5 /* TestContainerVc2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerVc2.m; sourceTree = "<group>"; };
 		54A65E07269E78E00059F1F5 /* TestContainerBottomCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainerBottomCell2.h; sourceTree = "<group>"; };
 		54A65E08269E78E00059F1F5 /* TestContainerBottomCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainerBottomCell2.m; sourceTree = "<group>"; };
+		54A65E0F269FCC480059F1F5 /* NSDateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDateManager.h; sourceTree = "<group>"; };
+		54A65E10269FCC480059F1F5 /* NSDateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateManager.m; sourceTree = "<group>"; };
+		54A65E12269FD1420059F1F5 /* TestActivityResidueTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestActivityResidueTimeViewController.h; sourceTree = "<group>"; };
+		54A65E13269FD1420059F1F5 /* TestActivityResidueTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestActivityResidueTimeViewController.m; sourceTree = "<group>"; };
+		54A65E1926A028F70059F1F5 /* TLResidueDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLResidueDateView.m; sourceTree = "<group>"; };
+		54A65E1A26A028F80059F1F5 /* TLResidueDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLResidueDateView.h; sourceTree = "<group>"; };
 		54CADF9F26253922007D1FD4 /* SDWebImageWebPCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImageWebPCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B71EF67F776C5D2B6CB7A4A /* Pods_Test_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33F3A0B580A996A70BAFBBC /* Pods-Test_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_OC.release.xcconfig"; path = "Target Support Files/Pods-Test_OC/Pods-Test_OC.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +235,8 @@
 		544FCF7925BEE96900EFD1C4 /* Test_OC */ = {
 			isa = PBXGroup;
 			children = (
+				54A65E1826A028ED0059F1F5 /* 活动倒计时 */,
+				54A65E0E269FCC380059F1F5 /* Tool */,
 				54664332269AEF6200FDAEB3 /* 瀑布流 */,
 				5444F9262629702E00FA002A /* libs */,
 				5471032E26032FE1008DE908 /* border测试 */,
@@ -439,6 +450,26 @@
 			path = "计算行高";
 			sourceTree = "<group>";
 		};
+		54A65E0E269FCC380059F1F5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				54A65E0F269FCC480059F1F5 /* NSDateManager.h */,
+				54A65E10269FCC480059F1F5 /* NSDateManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		54A65E1826A028ED0059F1F5 /* 活动倒计时 */ = {
+			isa = PBXGroup;
+			children = (
+				54A65E12269FD1420059F1F5 /* TestActivityResidueTimeViewController.h */,
+				54A65E13269FD1420059F1F5 /* TestActivityResidueTimeViewController.m */,
+				54A65E1A26A028F80059F1F5 /* TLResidueDateView.h */,
+				54A65E1926A028F70059F1F5 /* TLResidueDateView.m */,
+			);
+			path = "活动倒计时";
+			sourceTree = "<group>";
+		};
 		C1B5C26AA169DDEEBF2ECBD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,7 +669,10 @@
 				5466434A269C4AD900FDAEB3 /* TestContainerBottomCell.m in Sources */,
 				5486D89D25F9B3E200D05138 /* UCM_rebateSubNewTableView.m in Sources */,
 				5466434E269C4CB300FDAEB3 /* TestContainerBottomCollctionView.m in Sources */,
+				54A65E1B26A028F80059F1F5 /* TLResidueDateView.m in Sources */,
+				54A65E14269FD1420059F1F5 /* TestActivityResidueTimeViewController.m in Sources */,
 				54664351269C4E0000FDAEB3 /* TestContainerBottomCollctionViewCell.m in Sources */,
+				54A65E11269FCC480059F1F5 /* NSDateManager.m in Sources */,
 				54664335269AEF7700FDAEB3 /* TestCollectionViewController.m in Sources */,
 				544FCFD525BFB4A200EFD1C4 /* CLTestSharedView.m in Sources */,
 				5486D89C25F9B3E200D05138 /* UCM_rebateNewContentCell.m in Sources */,

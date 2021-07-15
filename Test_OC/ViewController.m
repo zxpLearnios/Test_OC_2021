@@ -17,6 +17,7 @@
 #import "TestCollectionViewController.h"
 #import "TestContainerVc.h"
 #import "TestContainerVc2.h"
+#import "TestActivityResidueTimeViewController.h"
 
 //#import <YYKit/YYKit.h>
 
@@ -109,15 +110,15 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     // test  CLTestViewController  UCM_rebateViewController  TestQMUIViewController TestCollectionViewController
     
+    // 1.
 //    UICollectionViewFlowLayout *flayout = [[UICollectionViewFlowLayout alloc]init];
 //    TestCollectionViewController *testVc = [[TestCollectionViewController alloc]initWithCollectionViewLayout:flayout];
     
-    // 列表多手势方式1
-    TestContainerVc *testVc = [TestContainerVc new];
-    // 列表多手势方式2
-    TestContainerVc2 *testVc2 = [TestContainerVc2 new];
-    
-    [self.navigationController pushViewController:testVc2 animated:YES];
+    // 2. 列表多手势方式1  TestContainerVc TestContainerVc2
+//    TestContainerVc *testVc = [TestContainerVc new];
+    // 3.  TestActivityResidueTimeViewController
+    TestActivityResidueTimeViewController *vc = [TestActivityResidueTimeViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

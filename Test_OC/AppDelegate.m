@@ -6,19 +6,17 @@
 //
 
 #import "AppDelegate.h"
+#import "NSDateManager.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSArray *ary =[NSDateManager getDayHourStringWithTimeInterval: 60 * 1000];
     return YES;
 }
-
-
 
 @end
