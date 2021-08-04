@@ -1,0 +1,30 @@
+//
+//  Test_oc.pch
+//  Test_OC
+//
+//  Created by bavaria on 2021/8/2.
+//
+
+
+#import <Masonry/Masonry.h>
+#import "UCM_rebateViewController.h"
+#import "TestQMUIViewController.h"
+#import <SDWebImage/SDWebImage.h>
+/// 处理webq格式的图片
+#import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
+
+
+
+#ifndef Test_oc_pch
+#define Test_oc_pch
+
+
+#define kvoiceRemoteControlNotikey  @"kvoiceRemoteControlNoti_key"
+#define knotificationCenter  NSNotificationCenter.defaultCenter
+
+#define WEAK(weakSelf)  __weak typeof(self) weakSelf = self
+
+#endif /* Test_oc_pch */
+
+
+static NSString *const kvoiceRemoteControlTypekey = @"kvoiceRemoteControlType_key";

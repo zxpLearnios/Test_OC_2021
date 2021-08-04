@@ -7,17 +7,16 @@
 
 #import "ViewController.h"
 #import "CLTestViewController.h"
-#import <Masonry/Masonry.h>
 #import "UCM_rebateViewController.h"
 #import "TestQMUIViewController.h"
-#import <SDWebImage/SDWebImage.h>
-/// 处理webq格式的图片
-#import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
 
 #import "TestCollectionViewController.h"
 #import "TestContainerVc.h"
 #import "TestContainerVc2.h"
 #import "TestActivityResidueTimeViewController.h"
+
+#import "TestLoadRichTextViewController.h"
+#import "TestRemoteVoiceViewController.h"
 
 //#import <YYKit/YYKit.h>
 
@@ -115,9 +114,11 @@
 //    TestCollectionViewController *testVc = [[TestCollectionViewController alloc]initWithCollectionViewLayout:flayout];
     
     // 2. 列表多手势方式1  TestContainerVc TestContainerVc2
-//    TestContainerVc *testVc = [TestContainerVc new];
-    // 3.  TestActivityResidueTimeViewController
-    TestActivityResidueTimeViewController *vc = [TestActivityResidueTimeViewController new];
+//    TestContainerVc2 *vc = [TestContainerVc2 new];
+    // 3.  TestActivityResidueTimeViewController  TestLoadRichTextViewController
+//    TestLoadRichTextViewController *vc = [TestLoadRichTextViewController new];
+    // 4.
+    TestRemoteVoiceViewController *vc = [TestRemoteVoiceViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

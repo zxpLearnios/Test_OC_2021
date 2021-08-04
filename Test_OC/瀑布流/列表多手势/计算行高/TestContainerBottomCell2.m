@@ -19,6 +19,7 @@
    
 }
 @property (nonatomic, strong) TestContainerBottomCollctionView *listView;
+@property (nonatomic, assign) int rowCount;
 @end
 
 @implementation TestContainerBottomCell2
@@ -59,6 +60,12 @@
             weakSelf.getMaxColumnBlock(height);
         }
     };
+    
+    self.rowCount = 0;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.rowCount = 40;
+        [self.listView reloadData];
+    });
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -104,7 +111,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 40;
+    return self.rowCount;
 }
 
 
